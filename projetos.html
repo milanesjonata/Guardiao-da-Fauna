@@ -3,67 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Projetos Sociais | Guardião da Fauna</title>
 </head>
 <body>
-    <header>
+    <header class="main-header">
+
+        <input type="checkbox" id="menu-toggle-input" class="menu-toggle-input" aria-controls="mainNav">
+
+        <label for="menu-toggle-input" class="menu-toggle" id="menuToggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
+
         <h1>Projetos do Guardião da Fauna</h1>
-        <img src="imagens/logo.png" alt="Logo da ONG Guardião da Fauna" width="15%">
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>    
-                <li><a href="projetos.html">Projetos</a></li>
-                <li><a href="cadastro.html">Contato</a></li>
+        <img src="imagens/logo.png" alt="Logo da ONG Guardião da Fauna" class="logo">
+
+        <nav class="main-nav" id="mainNav">
+            <ul class="nav-list">
+                <li><a href="index.html">Início</a></li>
+                <li class="nav-item-dropdown"><a href="projetos.html">Projetos ▼</a>
+                    <ul class="submenu">
+                            <li><a href="projetos.html#asas-livres">Asas Livres</a></li>
+                            <li><a href="projetos.html#habitat-verde">Habitat Verde</a></li>
+                            <li><a href="projetos.html#guardioes-mirins">Guardiões Mirins</a></li>
+                    </ul>
+                </li>
+                <li><a href="cadastro.html" class="btn btn-secundary">Contato</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
+    <main class="container">
+        <section class="projetos-grid grid-col-span-12">
             <h2>Nossos Projetos Atuais</h2>
-            <p>Conheça as iniciativas que mantemos ativas para proteger a vida silvestre e seus habitats:</p>
+            <p class="grid-col-span-12">Conheça as iniciativas que mantemos ativas para proteger a vida silvestre e seus habitats:</p>
 
-            <article>
+            <article class="projetos-grid grid-col-span-4" id="asas-livres">
                 <h3>Projeto Asas Livres</h3>
-                <img src="imagens/arara.jpg" alt="Arara-vermelha em seu habitat" width=100%>
+                <img src="imagens/arara.jpg" alt="Arara-vermelha em seu habitat" class="card-image">
                 <p>Resgate e reabilitação de aves vítimas de tráfico e maus-tratos, com o objetivo de reintroduzi-las na natureza. Nossas ações incluem cuidados veterinários especializados e treinamento para readaptação ao ambiente natural.</p>
-                <a href="#voluntario">Participe como voluntário neste projeto.</a>
-                
+                <div class="card-footer">
+                    <span class="tag tag-resgate">Resgate</span>
+                    <a href="#voluntario" class="btn btn-tertiary">Participe como voluntário neste projeto.</a>
+                </div>  
             </article>
-            <article>
-                <h3>Habitat Verde</h3>
-                <img src="imagens/reflorestamento.jpg" alt="Voluntários plantando árvores" width=100%>  
-                <p>Campanha de reflorestamento e recuperação de áreas degradadas que servem de abrigo para espécies ameaçadas. Desde 2020, já plantamos mais de 20 mil mudas nativas.</p>
-                <a href="#doacao">Apoie este projeto com uma doação.</a>
-                  
-            </article>
-            <article>
-                <h3>Guardiões Mirins</h3>
-                <img src="imagens/educacao.jpg" alt="Crianças aprendendo sobre a fauna" width=100%>
-                <p>Programa educativo em escolas públicas para conscientizar crianças sobre a importância da preservação ambiental. Ofuturo da fauna começa na educação de hoje.</p>
-                
-            </article>
-        </section>
-        <section id="voluntario">
-            <h2>Seja um Guardião Voluntário</h2>
-            <p>você pode juntar-se à nossa equipe. Dedique seu tempo e talento à causa, precisamos de ajudas em resgates, educação ambiental e manutenção das nossas áreas de reflorestamento.</p>
-            <a href="cadastro.html">
-                <button>Quero me Cadastrar como Voluntário</button>
-            </a>
-        </section>
-        
-        <section id="doacao">
-            <h2>Faça uma Doação</h2>
-            <p>Sua doação é fundamental para custear ração, medicamentos, equipamentos de resgate e a compra de mudas para reflorestamento. Toda ajuda faz a diferença!</p>
 
-            <ul>
-                <li><strong>Pix:</strong> Chave (CNPJ - Fícticio) 12.345.678-90</li>
-                <li><strong>Tranferência Bancária:</strong>Banco Fauna (123), Agência 0001, Conta 9876-5</li>
-                <li><a href="cadastro.html">Doação via Cartão de Crédito (Formulário)</a></li>
-            </ul>
+            <article class="projetos-grid grid-col-span-4" id="habitat-verde">
+                <h3>Habitat Verde</h3>
+                <img src="imagens/reflorestamento.jpg" alt="Voluntários plantando árvores" class="card-image">  
+                <p>Campanha de reflorestamento e recuperação de áreas degradadas que servem de abrigo para espécies ameaçadas. Desde 2020, já plantamos mais de 20 mil mudas nativas.</p>
+                <div class="card-footer">
+                    <span class="tag tag-conservacao">Conservação</span>
+                    <a href="#doacao" class="btn btn-primary">Apoie este projeto com uma doação.</a>
+                </div>  
+            </article>
+
+            <article class="projetos-grid grid-col-span-4" id="guardioes-mirins">
+                <h3>Guardiões Mirins</h3>
+                <img src="imagens/educacao.jpg" alt="Crianças aprendendo sobre a fauna" class="card-image">
+                <p>Programa educativo em escolas públicas para conscientizar crianças sobre a importância da preservação ambiental. Ofuturo da fauna começa na educação de hoje.</p>
+                <div class="card-footer">
+                    <span class="tag tag-educacao">Educação</span>
+                    <a href="cadastro.html" class="btn btn-secundary">Cadastrar</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="support-section grid-col-span-12">
+            <section id="voluntario" class="voluntario-info grid-col-span-6 card">
+                <h2>Seja um Guardião Voluntário</h2>
+                <p>você pode juntar-se à nossa equipe. Dedique seu tempo e talento à causa, precisamos de ajudas em resgates, educação ambiental e manutenção das nossas áreas de reflorestamento.</p>
+                <a href="cadastro.html">
+                    <button>Quero me Cadastrar como Voluntário</button>
+                </a>
+            </section>
+            
+            <section id="doacao" class="doacao-info grid-col-span-6 card">
+                <h2>Faça uma Doação</h2>
+                <p>Sua doação é fundamental para custear ração, medicamentos, equipamentos de resgate e a compra de mudas para reflorestamento. Toda ajuda faz a diferença!</p>
+
+                <ul>
+                    <li><strong>Pix:</strong> Chave (CNPJ - Fícticio) 12.345.678-90</li>
+                    <li><strong>Tranferência Bancária:</strong>Banco Fauna (123), Agência 0001, Conta 9876-5</li>
+                    <li><a href="cadastro.html" class="btn btn-primary">Doação via Cartão de Crédito (Formulário)</a></li>
+                </ul>
+            </section>
         </section>
     </main>
 
-    <footer>
+    <footer class="main-footer">
         <p>&copy; Guardião da Fauna - Todos os Direitos Reservados</p>
     </footer>
     

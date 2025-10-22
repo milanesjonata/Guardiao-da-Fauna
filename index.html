@@ -3,31 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Guardiões da Fauna</title>
+
 </head>
 <body>
-    <header>
+    <header class="main-header">
+
+        <input type="checkbox" id="menu-toggle-input" class="menu-toggle-input" aria-controls="mainNav">
+
+        <label for="menu-toggle-input" class="menu-toggle" id="menuToggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
+
         <h1>Guardião da Fauna - Proteção e Preservação da Vida Silvestre</h1>
-        <img src="imagens/logo.png" alt="Logo da ONG Guardião da Fauna" width="15%">
-        <nav>
-            <ul>
+        <img  src="imagens/logo.png" alt="Logo da ONG Guardião da Fauna" class="logo">
+
+        <nav class="main-nav" id="mainNav">
+            <ul class="nav-list">
                 <li><a href="index.html">Início</a></li>
-                <li><a href="projetos.html">Projetos</a></li>
-                <li><a href="cadastro.html">Contato</a></li>
+                <li class="nav-item-dropdown"><a href="projetos.html">Projetos ▼</a>
+                    <ul class="submenu">
+                            <li><a href="projetos.html#asas-livres">Asas Livres</a></li>
+                            <li><a href="projetos.html#habitat-verde">Habitat Verde</a></li>
+                            <li><a href="projetos.html#guardioes-mirins">Guardiões Mirins</a></li>
+                    </ul>
+                </li>
+                <li><a href="cadastro.html" class="btn btn-secundary">Contato</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="container">
         <!--Apresentação da Ong-->
         
-        <section>
+        <section class="hero-section grid-col-span-12">
             <h2>Juntos Pela Vida Silvestre</h2>
             <img src="imagens/onca.jpg" alt="Onça Pintada em seu habitat natural" width="100%">
             <p>A Guardião da Fauna é uma ONG sem fins lucrativos dedicada à preservação dos animais silvestres e de seus habitats naturais. A organização atua em campanhas de conscientização, resgate e reabilitação de espécies ameaçadas, além de promover ações educativas sobre a importância da biodiversidade e do equilíbrio ambiental.</p>
-            <a href="projetos.html">Conheça Nossos Projetos</a>
+            <a href="projetos.html" class="btn btn-primary btn-lg">Conheça Nossos Projetos</a>
         </section>
         <!--Sobre o Projeto-->
-        <section>
+        <section class="hero-section grid-col-span-8">
             <h2>Nossa Missão, Visão e Valores</h2>
             
             <h3>Missão:</h3>
@@ -45,18 +63,18 @@
                 <li>Empatia com os seres vivos.</li>
             </ul>  
         </section>
-        <section>
+        <section class="hero-section grid-col-span-4">
               <h2>Informações e Contato</h2>
               <address>
                 <p><strong>Endereço:</strong> Rua Um, 01 - Bairro Novo, SP</p>
-                <p><strong>Telefone:</strong> <a href="tel:+5513987654321"></a>(13) 98765-4321</p>
+                <p><strong>Telefone:</strong> <a href="tel:+5513987654321">(13) 98765-4321</a></p>
                 <p><strong>E-mail:</strong><a href="mailto:contato@guardiaodafauna.org">contato@guardiaodafauna.org</a></p>
-                <p>Se preferir, utilize nosso formulário na pagina de <a href="cadastro.html">Cadastro/Contato</a>.</p>
+                <p>Se preferir, utilize nosso formulário na pagina de <a href="cadastro.html" class="btn btn-seco ndary">Cadastro/Contato</a>.</p>
               </address>
         </section>
     </main>
 
-    <footer>
+    <footer class="main-footer">
         <p>&copy; Guardião da Fauna - Todos os Direitos Reservados</p>
     </footer>
 </body>
