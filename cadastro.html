@@ -17,20 +17,20 @@
             <span class="bar"></span>
         </label>
         
-        <h1>Seja um Guardião da Fauna!</h1>
         <img src="imagens/logo.png" alt="Logo da ONG Guardião da Fauna" class="logo">
+        <h1>Seja um Guardião da Fauna!</h1>
 
         <nav class="main-nav" id="mainNav">
             <ul class="nav-list">
-                <li><a href="index.html">Início</a></li>
-                <li class="nav-item-dropdown"><a href="projetos.html">Projetos ▼</a>
+                <li><a href="index.html" class="btn btn-secondary">Início</a></li>
+                <li class="nav-item-dropdown"><a href="projetos.html" class="btn btn-secondary">Projetos ▼</a>
                     <ul class="submenu">
                             <li><a href="projetos.html#asas-livres">Asas Livres</a></li>
                             <li><a href="projetos.html#habitat-verde">Habitat Verde</a></li>
                             <li><a href="projetos.html#guardioes-mirins">Guardiões Mirins</a></li>
                     </ul>
                 </li>
-                <li><a href="cadastro.html" class="btn btn-secundary">Contato</a></li>
+                <li><a href="cadastro.html" class="btn btn-secondary">Cadastro</a></li>
             </ul>
         </nav>
     </header>
@@ -94,34 +94,35 @@
                     <div class="form-group">
                         <label for="estado">Estado:</label>
                         <select id="estado" name="estado">
-                        <option value="" disabled selected>Selecione um Estado</option>
-                        <option value="AC">AC</option>
-                        <option value="AL">AL</option>
-                        <option value="AP">AP</option>
-                        <option value="AM">AM</option>
-                        <option value="BA">BA</option>
-                        <option value="CE">CE</option>
-                        <option value="DF">DF</option>
-                        <option value="ES">ES</option>
-                        <option value="GO">GO</option>
-                        <option value="MA">MA</option>
-                        <option value="MT">MT</option>
-                        <option value="MS">MS</option>
-                        <option value="MG">MG</option>
-                        <option value="PA">PA</option>
-                        <option value="PB">PB</option>
-                        <option value="PR">PR</option>
-                        <option value="PE">PE</option>
-                        <option value="PI">PI</option>
-                        <option value="RJ">RJ</option>
-                        <option value="RN">RN</option>
-                        <option value="RS">RS</option>
-                        <option value="RO">RO</option>
-                        <option value="RR">RR</option>
-                        <option value="SC">SC</option>
-                        <option value="SP">SP</option>
-                        <option value="SE">SE</option>
-                        <option value="TO">TO</option>
+                            <option value="" disabled selected>Selecione um Estado</option>
+                            <option value="AC">AC</option>
+                            <option value="AL">AL</option>
+                            <option value="AP">AP</option>
+                            <option value="AM">AM</option>
+                            <option value="BA">BA</option>
+                            <option value="CE">CE</option>
+                            <option value="DF">DF</option>
+                            <option value="ES">ES</option>
+                            <option value="GO">GO</option>
+                            <option value="MA">MA</option>
+                            <option value="MT">MT</option>
+                            <option value="MS">MS</option>
+                            <option value="MG">MG</option>
+                            <option value="PA">PA</option>
+                            <option value="PB">PB</option>
+                            <option value="PR">PR</option>
+                            <option value="PE">PE</option>
+                            <option value="PI">PI</option>
+                            <option value="RJ">RJ</option>
+                            <option value="RN">RN</option>
+                            <option value="RS">RS</option>
+                            <option value="RO">RO</option>
+                            <option value="RR">RR</option>
+                            <option value="SC">SC</option>
+                            <option value="SP">SP</option>
+                            <option value="SE">SE</option>
+                            <option value="TO">TO</option>
+                        </select>
                     </div>        
                 </fieldset>
 
@@ -138,7 +139,7 @@
                             <option value="administrativo">Apoio Administrativo</option>
                         </select>
                     </div>
-
+                    
                     <div class="form-group">
                         <label for="mensagem">Por que você quer ser voluntário? (Opcional)</label>
                         <textarea id="mensagem" name="mensagem" rows="4" placeholder="Conte-nos um pouco sobre você"></textarea>
@@ -146,15 +147,40 @@
                 </fieldset>
 
                 <div class="form-actions grid-col-span-12">
-                    <button type="submit" class="btn btn-primary btn-lg">Enviar Cadastro</button>
-                    <button type="button" class="btn btn-secundary" disabled>Doação Temporariamente Insisponível</button>
+                    <button type="submit" class="btn btn-primary btn-lg">Finalizar Cadastro</button>
+                    <button type="button" class="btn btn-secondary" disabled>Doação Temporariamente Insisponível</button>
                 </div>
             </form>
         </section>
     </main>
 
     <footer class="main-footer">
-        <p>&copy; Guardião da Fauna - Todos os Direitos Reservados</p>
+        <div class="container footer-content">
+            <div class="footer-col grid-col-span-4">
+                <img src="imagens/logo.png" alt="Logo" class="logo-footer">
+                <p>&copy; Guardião da Fauna - Todos os Direitos Reservados</p>
+            </div>
+        
+
+            <div class="footer-col grid-col-span-4">
+                <h4>Navegação Rápida</h4>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col grid-col-span-4">
+                <h4>Informações e Contatos</h4>
+                <address>
+                    <p><strong>Endereço:</strong> Rua Um, 01 - Bairro Novo, SP</p>
+                    <p><strong>Telefone:</strong> <a href="tel:+5513987654321">(13) 98765-4321</a></p>
+                    <p><strong>E-mail:</strong><a href="mailto:contato@guardiaodafauna.org">contato@guardiaodafauna.org</a></p>
+                    <p>Se preferir, utilize nosso formulário na pagina de <a href="cadastro.html">Cadastro/Contato</a></p>
+                </address>
+            </div>
+        </div>
     </footer>    
     
 </body>
