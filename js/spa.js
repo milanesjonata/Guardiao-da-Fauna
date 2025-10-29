@@ -18,14 +18,16 @@ const loadContent = async (url) => {
         if (newContent) {
             mainContent.innerHTML = newContent.innerHTML;
 
-            document.title = doc.tittle;
+            document.title = doc.title;
+
+            updateActiveLinks(url.pathname);
 
             const { setupValidator } = await import('./validator.js');
             setupValidator();
         }
     } catch (error) {
         console.error('Falha ao carregar o conteúdo da página:', error);
-        window.Location.href = url;
+        window.location.href = url;
     }
 };
 
@@ -35,7 +37,7 @@ const handleNavigation = (e) => {
         const url = new URL(target.href);
 
         if (url.origin === window.location.origin && url.hash === '') {
-            e.preventDefealt();
+            e.preventDefault();
             history.pushState(null, '', url.pathname);
 
             loadContent(url.pathname);
@@ -47,6 +49,8 @@ const setupSPA = () => {
     document.addEventListener('click', handleNavigation);
 
     window.addEventListener('popstate', () => loadContent(window.location.pathname));
+
+    updateActiveLinks(window.location.pathname);
 
     document.querySelectorAll('.nav-list a').forEach(a => {
         if (a.pathname === window.location.pathname) {

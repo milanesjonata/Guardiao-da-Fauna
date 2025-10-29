@@ -76,3 +76,6 @@ legend {
     font-size: var(--type-md);
     padding: var(--space-2) var(--space-4);
 }
+.is-hidden {
+    display: none;
+}
