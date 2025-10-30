@@ -1,11 +1,13 @@
 .contact-form {
-    max-width: 100%;
-    margin: var(--space-5) auto; 
-    padding: var(--space-5);
-    background-color: var(--cor-cinza-claro);
-    border-radius: var(--radius-md);
+    background-color: var(--cor-neutro-claro);
     box-shadow: var(--elevation-md);
-    border-top: 8px solid var(--cor-verde-principal);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    padding: var(--space-3);
+    border-top: 0.6rem solid var(--cor-verde-folha);
+    margin-bottom: var(--space-4);
+    display: flex;
+    flex-direction: column;
 }
 .contact-form h2 {
     text-align: center;

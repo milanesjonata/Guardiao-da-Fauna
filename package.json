@@ -1,0 +1,25 @@
+{
+  "name": "guardiao-da-fauna",
+  "version": "1.0.0",
+  "description": "A Guardião da Fauna é uma ONG sem fins lucrativos dedicada à preservação dos animais silvestres e de seus habitats naturais .",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/milanesjonata/Guardiao-da-Fauna.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/milanesjonata/Guardiao-da-Fauna/issues"
+  },
+  "homepage": "https://github.com/milanesjonata/Guardiao-da-Fauna#readme",
+  "devDependencies": {
+    "clean-css-cli": "^5.6.3",
+    "uglify-js": "^3.19.3"
+  }
+}
